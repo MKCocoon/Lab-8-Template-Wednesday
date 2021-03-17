@@ -70,7 +70,11 @@ public class CityList {
     }
 
     public void clear() {
-
+        int i = countCities() - 1;
+        while (i >= 0) {
+            cities.remove(i);
+            i--;
+        }
     }
 
     /**
